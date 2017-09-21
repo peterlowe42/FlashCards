@@ -55,14 +55,14 @@ class Card extends React.Component {
         this.setState({ flipped: !currentState });
     }
   render() { 
-  	var BackComponent = BackComponents[this.props.card.back_type] || BackComponents['Default'] 
+  	var BackComponent = BackComponents[this.props.card.backType] || BackComponents['Default'] 
 	 	return (
 	  	<div className='card-div' style={cardStlyes}>
 	  		<div className={ this.state.flipped ? 'flash-card flipped': 'flash-card'} 
 	  					style={flashCard}
 	  					onClick={this.toggleClass}>
 				<div className="front" style={{...flashCard, ...cardSide, ...front}}>
-					<h2>{this.props.card.front_text}</h2>
+					<h2>{this.props.card.frontText}</h2>
 				</div>			
 				<BackComponent card={this.props.card}/>
 			</div>

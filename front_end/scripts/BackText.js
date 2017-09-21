@@ -25,7 +25,7 @@ class BackText extends React.Component {
 	render(){
 		return (
 			<div className="back" style={{...cardSide, ...back}}>
-				<h2>{this.props.card.back_text}</h2>
+				<h2>{this.props.card.backText}</h2>
 			</div>
 			)
 	}

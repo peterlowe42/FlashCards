@@ -26,7 +26,7 @@ class BackDsc extends React.Component {
 		return (
 			<div className="back" style={{...cardSide, ...back}}>
 				<div style={{width: '80%', height:'80%'}}>
-					<ScrollBox text={this.props.card.back_text} />
+					<ScrollBox text={this.props.card.backText} />
 				</div>
 			</div>
 			)

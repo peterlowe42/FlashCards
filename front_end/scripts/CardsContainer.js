@@ -10,12 +10,11 @@ var containerStyles = {
 
 class CardsContainer extends React.Component {
 	render () {
-
 		return (
 			<div className='cards-container' style={containerStyles}>
-			  {this.props.cards.map(function(card){
+			  {this.props.cards.map(function(currentCard){
 			    return (
-			  			<Card key={card.id} card={card}/>
+			  			<Card key={currentCard.id} card={currentCard}/>
 			    	)
 			  })}
 			</div>

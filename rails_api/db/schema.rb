@@ -13,15 +13,15 @@
 ActiveRecord::Schema.define(version: 20170918200549) do
 
   create_table "cards", force: :cascade do |t|
-    t.string "front_text"
-    t.text "back_text"
+    t.string "frontText"
+    t.text "backText"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.string "back_type"
+    t.string "backType"
   end
 
 end
