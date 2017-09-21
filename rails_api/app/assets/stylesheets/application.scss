@@ -1,0 +1,35 @@
+
+
+// @mixin flex-centered {
+// 	display: flex;
+// 	align-items:center;
+// 	justify-content: center;
+// }
+
+// @mixin card-side {
+// 	height:100%;
+// 	border: 1px solid #aaaaaa;
+// 	@include flex-centered;
+// }
+
+
+// .flash-card {
+// 	width:300px;
+// 	height:300px;
+// 	position:absolute;
+// 	transform-style: preserve-3d;
+//   transition: all 0.5s ease-in-out;
+// }
+
+// .front {
+// 	@include card-side;
+// 	background:white;
+// }
+
+// .back {
+// 		width:100%;
+// 		@include card-side;
+// 		background:#f6f6f6;
+// 		top: 0px;
+// 		transform: rotateY(180deg);
+// 	}
