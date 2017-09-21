@@ -11,12 +11,6 @@ class App extends Component {
 		}
 	}
 	componentDidMount() {
-		// fetch polyfill
-		// this.serverRequest = $.get('http://localhost:3000/cards', function(result){		
-		// 	this.setState({
-		// 		result: result
-		// 	})
-		// }.bind(this))
 		this.serverRequest = fetch('http://localhost:3000/cards')
 														.then(function(response){
 															return response.json()
