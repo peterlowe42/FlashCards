@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 var textStyle = {
+	position:'relative',
 	textDecoration: 'none',
 	fontSize: '0.8rem',
 	fontStyle: 'italic'

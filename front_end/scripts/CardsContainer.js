@@ -15,6 +15,7 @@ var containerStyles = {
 var clickPosition = {
 	position:'absolute',
 	bottom:'5%',
+	right:'5%'
 }
 
 class CardsContainer extends React.Component {
