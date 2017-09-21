@@ -20,7 +20,7 @@ var flashCard = {
 	position: 'absolute',
 	transformStyle: 'preserve-3d',
 	transition:'all 0.5s ease-in-out',
-	boxShadow:'0px 0px 5px #dadada'
+	boxShadow:'0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.05)'
 };
 
 var cardSide = {
@@ -35,6 +35,10 @@ var cardSide = {
 };
 
 var front = {
+	width: '280px',
+	height: '280px',
+	borderTop: '3px solid #747a7e',
+	position: 'absolute',
 	background: 'white',
 };
 
@@ -64,8 +68,9 @@ class Card extends React.Component {
 	  		<div className={ this.state.flipped ? 'flash-card flipped': 'flash-card'} 
 	  					style={flashCard}
 	  					onClick={this.toggleClass}>
-				<div className="front" style={{...flashCard, ...cardSide, ...front}}>
+				<div className="front" style={{...cardSide, ...front}}>
 					{this.props.card.frontText}
+					{this.props.children}
 				</div>			
 				<BackComponent card={this.props.card}/>
 			</div>
