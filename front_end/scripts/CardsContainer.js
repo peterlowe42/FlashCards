@@ -6,6 +6,7 @@ const styles = require('./styleVars')
 var containerStyles = {
 	width:'100%',
 	fontFamily: styles.mainFont,
+	fontSize: '2rem',
 	textAlign: 'center',
 	marginTop: '30px'
 };

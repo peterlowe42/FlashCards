@@ -26,6 +26,7 @@ var flashCard = {
 var cardSide = {
 	height:'100%',
 	width:'100%',
+	fontWieght: 'light',
 	color: styles.textColor,
 	border: styles.cardBorder,
 	display: 'flex',
@@ -64,7 +65,7 @@ class Card extends React.Component {
 	  					style={flashCard}
 	  					onClick={this.toggleClass}>
 				<div className="front" style={{...flashCard, ...cardSide, ...front}}>
-					<h2>{this.props.card.frontText}</h2>
+					{this.props.card.frontText}
 				</div>			
 				<BackComponent card={this.props.card}/>
 			</div>

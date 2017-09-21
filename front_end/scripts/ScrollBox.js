@@ -5,6 +5,7 @@ var scrollBox = {
 	width:'100%',
 	height:'100%',
 	textAlign:'left',
+	paddingRight: '10px',
 	fontSize:'1.2rem',
 	lineHeight:'1.8rem',
 	overflowY:'scroll'
@@ -38,7 +39,7 @@ class ScrollBox extends React.Component {
 			<div className='scroll-box' style={scrollBox} onScroll={this.handleScroll}>
 				<div className='fade-out' style={fadeOut}></div>
 				{this.props.text.split(/\\n/).map(function(text, index){
-					return <p key={index}>{text}</p>
+					return <p key={index} style={{marginTop: '0px'}}>{text}</p>
 				})}
 			</div>
 			)

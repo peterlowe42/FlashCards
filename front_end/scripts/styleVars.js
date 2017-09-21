@@ -3,7 +3,8 @@ module.exports = {
 	backColor: '#f6f6f6',
 	shadowColor: '#dadada',
 	cardBorder: '1px solid #aaaaaa',
-	mainFont: 'sans Serif'
+	mainFont: "'Lato', sans-serif",
+	textLarge: '2rem'
 }
 
 
