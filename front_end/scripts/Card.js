@@ -8,7 +8,7 @@ var cardStlyes = {
 	display:'inline-block',
 	cursor: 'pointer',
 	width: '280px',
-	height:'280px',
+	height:'290px',
 	WebkitPerspective: '1000px',
 	perspective: '1000px',
 };
