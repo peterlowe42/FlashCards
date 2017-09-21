@@ -39,7 +39,7 @@ const BackComponents = {
 	Text: BackText,
 	Image: BackImage,
 	Dsc: BackDsc,
-	Default: 'Text'
+	Default: BackText
 }
 
 class Card extends React.Component {

@@ -27,7 +27,9 @@ build/Release
 .DS_Store
 
 # Ignore bundler config.
-/rails_api/.bundle
+rails_api/.bundle
+
+rails_api/public/system/*
 
 # Ignore the default SQLite database.
 /rails_api/db/*.sqlite3
