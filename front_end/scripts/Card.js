@@ -3,6 +3,7 @@ import BackText from "./BackText"
 import BackImage from "./BackImage"
 import BackDsc from "./BackDsc"
 
+const styles = require('./styleVars')
 
 var cardStlyes = {
 	display:'inline-block',
@@ -25,12 +26,13 @@ var flashCard = {
 var cardSide = {
 	height:'100%',
 	width:'100%',
-	color:'#626262',
-	border: '1px solid #aaaaaa',
+	color: styles.textColor,
+	border: styles.cardBorder,
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
 };
+
 var front = {
 	background: 'white',
 };

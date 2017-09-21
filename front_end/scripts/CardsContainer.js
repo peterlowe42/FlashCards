@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Card from "./Card.js"
 
+const styles = require('./styleVars')
+
 var containerStyles = {
 	width:'100%',
-	fontFamily: 'sansSerif',
+	fontFamily: styles.mainFont,
 	textAlign: 'center',
 	marginTop: '30px'
 };

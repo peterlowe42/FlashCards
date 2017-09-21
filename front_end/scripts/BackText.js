@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 
+const styles = require('./styleVars')
+
 var cardSide = {
 	height:'100%',
 	width:'100%',
-	color:'#626262',
-	border: '1px solid #aaaaaa',
+	color:styles.textColor,
+	border: styles.cardBorder,
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
 };
 
 var back = {
-	color:'#626262',
-	background:'#f6f6f6',
+	background:styles.backColor,
 	top: '0px',
 	transform: 'rotateY(180deg)',
 };
