@@ -54,7 +54,8 @@ class Card extends React.Component {
 		super(props);
 		this.toggleClass = this.toggleClass.bind(this);
 		this.state = {
-			flipped: false
+			flipped: false,
+			frontHidden: false
 		};
 	}
 	toggleClass() {
