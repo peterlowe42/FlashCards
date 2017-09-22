@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 var loadStyle = {
 	width: '100%',
-	height: '200px',
+	height: '280px',
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center'
