@@ -9,7 +9,7 @@ Code challenge for Articulate
  - $ bundle install
  - $ rake db:migrate db:seed
  - $ rails s
- 
+### in seperate teminal window
  - cd into front_end dir
  - $ npm install
  - $ npm run start
