@@ -1,6 +1,5 @@
 # FlashCards
-Code challenge for Articulate
-
+Built as a solution to a code challenge. Consists of a rails API and a React front end built in node.
 ## Install Steps
 - clone repo 
 
