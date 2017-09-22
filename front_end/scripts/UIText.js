@@ -19,8 +19,7 @@ class UIText extends React.Component {
 	}
 
 	onMouseOver() {
-		console.log('Hover')
-		this.setState({
+			this.setState({
 			hover: true
 		})
 	}
@@ -33,7 +32,9 @@ class UIText extends React.Component {
 	render() {
 		var fontWeight = this.state.hover ? { fontWeight: '600' } : { fontWeight: '500'}
 		return(
-			<a href="#" style={{...textStyle,...fontWeight}} onMouseEnter={this.onMouseOver} onMouseLeave={this.onMouseOut}>{this.props.children}</a>
+			<a href="#" style={{...textStyle,...fontWeight}} onMouseEnter={this.onMouseOver} onMouseLeave={this.onMouseOut}>
+				{this.props.children}
+			</a>
 			)
 	}
 }

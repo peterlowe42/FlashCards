@@ -27,9 +27,7 @@ class BackImage extends React.Component {
 	render(){
 		return (
 				<div className="back" style={{...cardSide, ...back, ...{backgroundImage: 'url(http://localhost:3000' + this.props.card.image_url + ')', backgroundSize:'cover',backgroundPosition:'50%'}}}>
-				  <div >
-						{this.props.card.backText}
-				  </div>
+					{this.props.card.backText}
 				</div>
 			)
 	}
