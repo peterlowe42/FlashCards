@@ -14,6 +14,7 @@ var cardSide = {
 
 var back = {
 	background:styles.backColor,
+	paddingTop: '2px',
 	top: '0px',
 	transform: 'rotateY(180deg)',
 };

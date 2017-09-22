@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import CardsContainer from "./CardsContainer"
-
+import Loading from "./Loading"
 
 class App extends Component {
 	constructor(props){
@@ -25,7 +25,7 @@ class App extends Component {
   	if (this.state.result == '')
   	{
   		return (
-  				<div>Loading</div>
+  			<Loading />
   			)
   	}else {
 
