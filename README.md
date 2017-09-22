@@ -14,4 +14,4 @@ Code challenge for Articulate
  - npm install
  - npm run start
  
- -View on localhost:5000
+ - View on localhost:5000
