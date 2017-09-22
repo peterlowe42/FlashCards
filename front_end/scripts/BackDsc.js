@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import ScrollBox from "./ScrollBox"
 
+const styles = require('./styleVars')
+
 var cardSide = {
 	height:'100%',
 	width:'100%',
-	color:'#626262',
-	border: '1px solid #aaaaaa',
+	color: styles.textColor,
+	border: styles.cardBorder,
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
 };
 
 var back = {
-	color:'#626262',
-	background:'#f6f6f6',
+	color:styles.textColor,
+	background: styles.backColor,
 	top: '0px',
 	transform: 'rotateY(180deg)',
 };
@@ -26,7 +28,7 @@ class BackDsc extends React.Component {
 		return (
 			<div className="back" style={{...cardSide, ...back}}>
 				<div style={{width: '80%', height:'80%'}}>
-					<ScrollBox text={this.props.card.back_text} />
+					<ScrollBox text={this.props.card.backText} />
 				</div>
 			</div>
 			)

@@ -3,6 +3,7 @@ import BackText from "./BackText"
 import BackImage from "./BackImage"
 import BackDsc from "./BackDsc"
 
+const styles = require('./styleVars')
 
 var cardStlyes = {
 	display:'inline-block',
@@ -19,19 +20,25 @@ var flashCard = {
 	position: 'absolute',
 	transformStyle: 'preserve-3d',
 	transition:'all 0.5s ease-in-out',
-	boxShadow:'0px 0px 5px #dadada'
+	boxShadow:'0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.05)'
 };
 
 var cardSide = {
 	height:'100%',
 	width:'100%',
-	color:'#626262',
-	border: '1px solid #aaaaaa',
+	fontWieght: 'light',
+	color: styles.textColor,
+	border: styles.cardBorder,
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
 };
+
 var front = {
+	width: '280px',
+	height: '280px',
+	borderTop: '3px solid #747a7e',
+	position: 'absolute',
 	background: 'white',
 };
 
@@ -39,7 +46,7 @@ const BackComponents = {
 	Text: BackText,
 	Image: BackImage,
 	Dsc: BackDsc,
-	Default: 'Text'
+	Default: BackText
 }
 
 class Card extends React.Component {
@@ -55,14 +62,15 @@ class Card extends React.Component {
         this.setState({ flipped: !currentState });
     }
   render() { 
-  	var BackComponent = BackComponents[this.props.card.back_type] || BackComponents['Default'] 
+  	var BackComponent = BackComponents[this.props.card.backType] || BackComponents['Default'] 
 	 	return (
 	  	<div className='card-div' style={cardStlyes}>
 	  		<div className={ this.state.flipped ? 'flash-card flipped': 'flash-card'} 
 	  					style={flashCard}
 	  					onClick={this.toggleClass}>
-				<div className="front" style={{...flashCard, ...cardSide, ...front}}>
-					<h2>{this.props.card.front_text}</h2>
+				<div className="front" style={{...cardSide, ...front}}>
+					{this.props.card.frontText}
+					{this.props.children}
 				</div>			
 				<BackComponent card={this.props.card}/>
 			</div>
