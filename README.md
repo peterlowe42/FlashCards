@@ -4,7 +4,7 @@ Code challenge for Articulate
 ## Install Steps
 - clone repo 
 
-##In command line
+## In command line
  -cd into rails_api dir
  -$ bundle install
  -rake db:migrate db:seed
