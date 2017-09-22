@@ -17,7 +17,7 @@ var back = {
 	paddingTop: '2px',
 	position:'absolute',
 	top: '0px',
-	transform: 'translateZ(-1px)',
+	transform: 'translateZ(-1px) rotateY(180deg)',
 };
 
 
@@ -28,9 +28,7 @@ class BackText extends React.Component {
 	render(){
 		return (
 			<div className="back" style={{...cardSide, ...back}}>
-			  <div style={{transform:'rotateY(180deg)'}}>
 					{this.props.card.backText}
-			  </div>
 			</div>
 			)
 	}

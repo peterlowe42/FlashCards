@@ -17,7 +17,7 @@ var back = {
 	paddingTop: '2px',
 	background: styles.backColor,
 	top: '0px',
-	transform: 'translateZ(-1px)',
+	transform: 'translateZ(-1px) rotateY(180deg)',
 };
 
 class BackDsc extends React.Component {
@@ -27,7 +27,7 @@ class BackDsc extends React.Component {
 	render() {
 		return (
 			<div className="back" style={{...cardSide, ...back}}>
-				<div style={{width: '80%', height:'80%', transform:'rotateY(180deg)'}}>
+				<div style={{width: '80%', height:'80%'}}>
 					<ScrollBox text={this.props.card.backText} />
 				</div>
 			</div>

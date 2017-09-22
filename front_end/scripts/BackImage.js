@@ -16,7 +16,7 @@ var back = {
 	paddingTop: '2px',
 	backgroundColor: styles.backColor,
 	top: '0px',
-	transform: 'translateZ(-1px)',
+	transform: 'translateZ(-1px) rotateY(180deg)',
 };
 
 
@@ -27,7 +27,7 @@ class BackImage extends React.Component {
 	render(){
 		return (
 				<div className="back" style={{...cardSide, ...back, ...{backgroundImage: 'url(http://localhost:3000' + this.props.card.image_url + ')', backgroundSize:'cover',backgroundPosition:'50%'}}}>
-				  <div style={{transform:'rotateY(180deg)'}}>
+				  <div >
 						{this.props.card.backText}
 				  </div>
 				</div>
