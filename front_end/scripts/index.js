@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App';
+import FlashCards from './FlashCards';
 
 render(
-  <App />,
+  <FlashCards />,
   document.getElementById('root')
 );
 

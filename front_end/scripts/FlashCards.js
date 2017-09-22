@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import CardsContainer from "./CardsContainer"
 import Loading from "./Loading"
 
-class App extends Component {
+class FlashCards extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
@@ -36,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default FlashCards
