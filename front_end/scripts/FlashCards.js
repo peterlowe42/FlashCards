@@ -21,7 +21,6 @@ class FlashCards extends Component {
 														}.bind(this))
 	}
   render() {
-  	console.log('result',this.state.resut);
   	if (this.state.result == '')
   	{
   		return (
