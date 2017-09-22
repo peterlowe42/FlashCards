@@ -7,11 +7,11 @@ Code challenge for Articulate
 ### In command line
  - cd into rails_api dir
  - $ bundle install
- - rake db:migrate db:seed
- - rails s
+ - $ rake db:migrate db:seed
+ - $ rails s
  
  - cd into front_end dir
- - npm install
- - npm run start
+ - $ npm install
+ - $ npm run start
  
  - View on localhost:5000
