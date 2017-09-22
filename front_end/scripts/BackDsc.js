@@ -17,7 +17,7 @@ var back = {
 	paddingTop: '2px',
 	background: styles.backColor,
 	top: '0px',
-	transform: 'rotateY(180deg)',
+	transform: 'translateZ(-1px) rotateY(180deg)',
 };
 
 class BackDsc extends React.Component {

@@ -6,6 +6,7 @@ import BackDsc from "./BackDsc"
 const styles = require('./styleVars')
 
 var cardStlyes = {
+	position: 'relative',
 	display:'inline-block',
 	cursor: 'pointer',
 	width: '280px',
@@ -18,6 +19,8 @@ var flashCard = {
 	width: '280px',
 	height: '280px',
 	position: 'absolute',
+	top: '0px',
+	left:'0px',
 	transformStyle: 'preserve-3d',
 	transition:'all 0.5s ease-in-out',
 	boxShadow:'0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.05)'
@@ -39,6 +42,8 @@ var front = {
 	height: '280px',
 	borderTop: '3px solid #747a7e',
 	position: 'absolute',
+	top:'0px',
+	left:'0px',
 	background: 'white',
 };
 

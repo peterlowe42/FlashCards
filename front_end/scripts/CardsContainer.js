@@ -5,6 +5,7 @@ import UIText from "./UIText"
 const styles = require('./styleVars')
 
 var containerStyles = {
+	position:'relative',
 	width:'100%',
 	fontFamily: styles.mainFont,
 	fontSize: '2rem',
